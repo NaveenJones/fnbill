@@ -1,0 +1,200 @@
+.invoice-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  max-width: 300px;
+}
+
+.invoice-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 600;
+}
+
+/* Card css */
+.invoice-card {
+  border: 1px solid var(--invoice-card-box-border);
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.invoice-card:hover {
+  background-color: var(--invoice-card-box-hover);
+  border-color: var(--link-color-hover);
+}
+
+.invoice-card:hover + .message-box {
+  border-color: var(--link-color-hover);
+}
+
+.invoice-card .profile-image {
+  border-radius: 50%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+}
+.invoice-card .ad-image {
+  -o-object-fit: contain;
+  object-fit: contain;
+  height: 100px;
+}
+
+.invoice-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.invoice-card-header .name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--main-color);
+  margin: 0;
+}
+
+.invoice-card-content {
+  padding-left: 16px;
+  width: 100%;
+}
+
+.invoice-card-line {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 8px 0;
+  color: var(--secondary-color);
+  opacity: 0.7;
+}
+
+.invoice-card-line.time {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.invoice-card-boxes {
+  margin: 0 -8px;
+  overflow-y: auto;
+}
+
+.invoice-card-box {
+  --main-color-invoice-card: #dbf6fd;
+  border-radius: 30px;
+  padding: 16px;
+  background-color: var(--main-color-invoice-card);
+}
+
+.invoice-card-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  color: var(--main-color);
+}
+
+.invoice-card-box-header span {
+  color: #4a4a4a;
+  opacity: 0.7;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.invoice-card-box-content-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.invoice-card-box-content-header p {
+  margin: 0;
+}
+
+.invoice-card-box-wrapper {
+  padding: 8px;
+  transition: 0.2s;
+}
+
+/* Pay Search Input */
+
+.pay-button {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+.svgIcon {
+  width: 16px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.pay-button::before {
+  width: 100%;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+
+.pay-button:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+
+.pay-button:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.3s;
+}
