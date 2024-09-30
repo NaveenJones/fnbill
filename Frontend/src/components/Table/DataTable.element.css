@@ -1,0 +1,180 @@
+.table-input {
+  width: 200px;
+  height: 40px;
+  background-color: #151515;
+  margin: 10px 20px 20px 10px;
+  outline: none;
+  transition: 0.3s all;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.table-input:focus {
+  background-color: white;
+  color: #151515;
+}
+
+/* For Invoice-table */
+@media screen and (max-width: 992px) {
+  #invoice-table tbody tr td:nth-child(1):before {
+    content: "Actions";
+  }
+
+  #invoice-table tbody tr td:nth-child(2):before {
+    content: "Invoice ID";
+  }
+
+  #invoice-table tbody tr td:nth-child(3):before {
+    content: "Date of Purchase";
+  }
+
+  #invoice-table tbody tr td:nth-child(4):before {
+    content: "Billing Customer Name";
+  }
+
+  #invoice-table tbody tr td:nth-child(5):before {
+    content: "Billing Street Address";
+  }
+
+  #invoice-table tbody tr td:nth-child(6):before {
+    content: "Billing City";
+  }
+
+  #invoice-table tbody tr td:nth-child(7):before {
+    content: "Billing State";
+  }
+
+  #invoice-table tbody tr td:nth-child(8):before {
+    content: "Billing Zip Code";
+  }
+
+  #invoice-table tbody tr td:nth-child(9):before {
+    content: "Shipping Customer Name";
+  }
+
+  #invoice-table tbody tr td:nth-child(10):before {
+    content: "Shipping Street Address";
+  }
+
+  #invoice-table tbody tr td:nth-child(11):before {
+    content: "Shipping City";
+  }
+
+  #invoice-table tbody tr td:nth-child(12):before {
+    content: "Shipping State";
+  }
+
+  #invoice-table tbody tr td:nth-child(13):before {
+    content: "Shipping Zip Code";
+  }
+
+  #invoice-table tbody tr td:nth-child(14):before {
+    content: "Company Name";
+  }
+
+  #invoice-table tbody tr td:nth-child(15):before {
+    content: "Phone Number";
+  }
+
+  #invoice-table tbody tr td:nth-child(16):before {
+    content: "Weblink";
+  }
+
+  #invoice-table tbody tr td:nth-child(17):before {
+    content: "Contact_Mail";
+  }
+
+  #invoice-table tbody tr td:nth-child(18):before {
+    content: "Company Street Address";
+  }
+
+  #invoice-table tbody tr td:nth-child(19):before {
+    content: "Company City";
+  }
+
+  #invoice-table tbody tr td:nth-child(20):before {
+    content: "Company State";
+  }
+
+  #invoice-table tbody tr td:nth-child(21):before {
+    content: "Company Zip Code";
+  }
+}
+
+.context-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s all;
+  border-radius: 100px;
+}
+
+.context-button.update {
+  background-color: #57a6a1;
+  color: white;
+  border: 1px solid #57a6a1;
+}
+
+.context-button.update:hover {
+  color: #57a6a1;
+  background-color: white;
+}
+
+.context-button.generate-paid-reciept {
+  background-color: #57a6a1;
+  color: white;
+  border: 1px solid #57a6a1;
+}
+
+.context-button.generate-paid-reciept:hover {
+  color: #57a6a1;
+  background-color: white;
+}
+
+.context-button.delete {
+  background-color: #ff0000;
+  color: white;
+  border: 1px solid #ff0000;
+}
+
+.context-button.delete:hover {
+  color: #ff0000;
+  background-color: white;
+}
+
+.context-button.view {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.context-button.view:hover {
+  color: #007bff;
+  background-color: white;
+}
+
+.context-button.generate {
+  background-color: #57a6a1;
+  color: white;
+  border: 1px solid #57a6a1;
+}
+
+.context-button.generate:hover {
+  color: #57a6a1;
+  background-color: white;
+}
+
+.context-button.share {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
+
+.context-button.share:hover {
+  color: #007bff;
+  background-color: white;
+}

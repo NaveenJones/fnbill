@@ -1,0 +1,5 @@
+@keyframes pageloader {
+    to {
+        transform: rotate(360deg);
+    }
+}
