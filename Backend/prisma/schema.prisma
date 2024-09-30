@@ -1,0 +1,44 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model CustomInvoice {
+  id              String    @default(uuid()) @id
+  invoice_id      String    @unique
+  invoice_data    Json?
+  state           Int
+  due_amount      Float
+  total_amount    Float
+  paid_by         String?
+  paid_on         DateTime?
+  payment_details Json?
+  uid              String    
+  created_at      DateTime  @default(now())
+}
+
+model CompanyInfo {
+  id              String    @default(uuid()) @id
+  name            String    @unique
+  info            Json?
+  uid              String    
+  created_at      DateTime  @default(now())
+}
+
+model AdvertisementInfo {
+  id              String    @default(uuid()) @id
+  name            String    @unique
+  ad_file         Json?
+  uid              String    
+  created_at      DateTime  @default(now())
+}

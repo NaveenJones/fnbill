@@ -1,0 +1,41 @@
+http://localhost:3000/api/files/3b37ff1d-37f0-4fce-8aa8-7c644511dbb7.jpg
+
+
+###
+
+http://localhost:3000/api/users
+
+
+###
+PATCH http://localhost:3000/api/custom-invoices/payment/82ca5335-848b-435a-bec8-c46b495f9449
+content-type: application/json
+
+{"content" :{
+    "amount": "103200.23",
+    "payment_terms": "bank_account",
+    "paid_by": "string",
+    "paid_on": "2024-06-12T16:36:00Z",
+    
+    "bank_account": [
+        {
+            "value": "string"
+        },
+        {
+            "value": "string"
+        },
+        {
+            "value": "string"
+        },
+        {
+            "value": "string"
+        }
+    ],
+    "cheque": [
+        {
+            "value": ""
+        },
+        {
+            "value": ""
+        }
+    ]
+}}
